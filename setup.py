@@ -42,11 +42,14 @@ German election poll data from dawum.de
         'Natural Language :: English',
         'Operating System :: Unix',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Operating System :: OS Independent',
     ],
     packages=find_packages(),
     include_package_data=False,
-    install_requires=[
+    install_requires=["pandas", "requests"
+
         # add your dependencies here
         # remember to use 'package-name>=x.y.z,<x.y+1.0' notation (this way you get bugfixes)
     ],
@@ -55,6 +58,7 @@ German election poll data from dawum.de
     },
     entry_points={
         'console_scripts': [
+            'gepd=gepd.main:main'
             # add cli scripts here in this form:
             # 'gepd=gepd.cli:main',
         ],

@@ -1,6 +1,6 @@
 import pandas
 import requests
-import json
+#import json
 
 class gepd:
     def __init__(self):
@@ -18,8 +18,6 @@ class gepd:
         except ConnectionError:
             return "No Connection"
 
-
-
     def get_data_license(self):
         return self.json["Database"]
 
@@ -35,9 +33,12 @@ class gepd:
     def get_parties(self):
         return self.json["Parties"]
 
-    def get_surveys(self):
+    def get_surveys_raw(self):
         return self.json["Surveys"]
 
+    def get_surveys(self,):
+        df = pandas.DataFrame(self.json["Surveys"])
+        return df
 
 
 if __name__ == "__main__":
