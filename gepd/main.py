@@ -143,6 +143,6 @@ class gepd:
 
 if __name__ == "__main__":
     data = gepd()
-    print(data.get_surveys(limit=0))
+    print(data.get_surveys(limit=0, min_survey=1500))
 
 
