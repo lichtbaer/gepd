@@ -21,6 +21,8 @@ tests_require = [
     'ipdb',
     'coveralls',
     'sphinx',
+    'pandas',
+    'requests',
 ]
 
 setup(
