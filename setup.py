@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # This file is part of gepd.
-# https://github.com/lichtbaer/dawum
+# https://github.com/lichtbaer/gepd
 
 # Licensed under the MIT license:
 # http://www.opensource.org/licenses/MIT-license
@@ -36,7 +36,7 @@ German election poll data from dawum.de
     url='https://github.com/lichtbaer/dawum',
     license='MIT',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
@@ -48,17 +48,15 @@ German election poll data from dawum.de
     ],
     packages=find_packages(),
     include_package_data=False,
-    install_requires=["pandas", "requests"
-
-        # add your dependencies here
-        # remember to use 'package-name>=x.y.z,<x.y+1.0' notation (this way you get bugfixes)
+    install_requires=[
+        'pandas',
+        'requests',
     ],
     extras_require={
         'tests': tests_require,
     },
     entry_points={
         'console_scripts': [
-            'gepd=gepd.main:main'
             # add cli scripts here in this form:
             # 'gepd=gepd.cli:main',
         ],

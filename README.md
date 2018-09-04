@@ -1,15 +1,14 @@
-# GEPD - German election poll data
+# gepd
+German election poll data
 
-Just a small Python Wrapper around https://api.dawum.de/ 
-
-Required Libs: requests
-
-Usage: 
-import gepd
-
-`data = gepd()
-data.get_parties()`
+Uses Data From https://api.dawum.de/
+requirements:
+pandas,
+requests
 
 
 
-data.refresh_data()
+
+#TODO
+Tests implementieren,
+mehr Filter implementieren

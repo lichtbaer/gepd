@@ -1,5 +1,5 @@
 # This file is part of gepd.
-# https://github.com/lichtbaer/dawum
+# https://github.com/lichtbaer/gepd
 
 # Licensed under the MIT license:
 # http://www.opensource.org/licenses/MIT-license
